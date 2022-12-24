@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "298366067877",
+    "project_id": "collegeproject-a59bc",
+    "storage_bucket": "collegeproject-a59bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298366067877:android:18da3673edd26d852f194c",
+        "android_client_info": {
+          "package_name": "com.example.ashis.agricultureexpertsservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298366067877-mleadaftee4b6fc3mi04ofo220uftk4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ06Ul1DQq2iv3nFULA4ltqzengGb8rAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298366067877-mleadaftee4b6fc3mi04ofo220uftk4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    >
+
+   <LinearLayout
+       android:id="@+id/receiver_chat"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <com.mikhaellopez.circularimageview.CircularImageView
+           android:id="@+id/personal_profile"
+           android:layout_width="45dp"
+           android:layout_height="45dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginLeft="2dp"
+           android:scaleType="centerCrop"
+           android:src="@drawable/ic_profile" />
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+
+           <ImageView
+               android:id="@+id/receive_image"
+               android:layout_width="200dp"
+               android:layout_height="200dp"
+               android:layout_marginBottom="8dp"
+               android:scaleType="fitStart" />
+
+           <TextView
+               android:id="@+id/receiver"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/personal_chat_background"
+               android:gravity="center"
+               android:paddingBottom="5dp"
+               android:paddingLeft="10dp"
+               android:paddingRight="10dp"
+               android:paddingTop="5dp"
+               android:text="Hello"
+               android:textColor="@android:color/white"
+               android:textSize="14dp" />
+
+
+           <TextView
+               android:id="@+id/sender_time"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="9:00"
+               android:layout_marginTop="5dp"
+               android:layout_below="@+id/receiver_chat"
+               />
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sender_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/send_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="true"
+            android:layout_marginBottom="8dp"
+            android:scaleType="fitEnd" />
+
+        <TextView
+            android:id="@+id/sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/personal_chat_background"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:text="Hello. How are you?"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"
+
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sender_message"
+            android:layout_marginTop="5dp"
+            android:gravity="right">
+
+
+                <TextView
+                    android:id="@+id/receiver_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="9:01" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

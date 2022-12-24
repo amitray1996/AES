@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".View.HomeFragment">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/dashboard_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dashboard_logo"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <com.loopeer.shadow.ShadowView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cornerRadius="4dp"
+                app:shadowMargin="8dp"
+                app:shadowRadius="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/weather_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/weather"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/ic_weather" />
+
+                    <TextView
+                        android:id="@+id/txt_weather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Weather"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </com.loopeer.shadow.ShadowView>
+
+            <com.loopeer.shadow.ShadowView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cornerRadius="4dp"
+                app:shadowMargin="8dp"
+                app:shadowRadius="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/technology_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/technology"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/ic_technology" />
+
+                    <TextView
+                        android:id="@+id/txt_technologies"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Technology"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </com.loopeer.shadow.ShadowView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+
+            <com.loopeer.shadow.ShadowView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginRight="8dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cornerRadius="4dp"
+                app:shadowMargin="8dp"
+                app:shadowRadius="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/chat_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/chat_experts"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/ic_chat" />
+
+                    <TextView
+                        android:id="@+id/txt_chat_experts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Chat"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </com.loopeer.shadow.ShadowView>
+
+            <com.loopeer.shadow.ShadowView
+                android:layout_width="80dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:elevation="8dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cornerRadius="4dp"
+                app:shadowMargin="8dp"
+                app:shadowRadius="8dp">
+
+
+                <LinearLayout
+                    android:id="@+id/shopping_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/shopping"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        app:srcCompat="@drawable/ic_shopping" />
+
+                    <TextView
+                        android:id="@+id/txt_shopping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="5dp"
+                        android:text="Shop Here"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </com.loopeer.shadow.ShadowView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

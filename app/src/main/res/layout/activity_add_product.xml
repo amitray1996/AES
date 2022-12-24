@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".View.AddProductActivity">
+
+    <RelativeLayout
+        android:id="@+id/p_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+    <ImageView
+        android:id="@+id/product_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@drawable/ic_green_beans"
+        android:scaleType="centerCrop"
+        />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#88333333"
+            ></FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16sp"
+        android:layout_below="@+id/p_image"
+        android:layout_marginBottom="5sp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/p_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Name" />
+
+        <EditText
+            android:id="@+id/p_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description" />
+
+        <EditText
+            android:id="@+id/p_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rate" />
+
+        <EditText
+            android:id="@+id/p_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Quantity" />
+
+        <Spinner
+            android:id="@+id/p_types"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:entries="@array/productTypeArray" />
+
+        <Button
+            android:id="@+id/save_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/buy_drawable_layout"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add_image"
+        android:layout_width="65sp"
+        android:layout_height="65sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50sp"
+        android:src="@drawable/ic_addd"/>
+
+
+
+</RelativeLayout>
